@@ -44,7 +44,8 @@
     "build-commonjs-modules": "better-npm-run build-commonjs-modules",
     "build-es6-modules": "better-npm-run build-es6-modules",
     "build": "npm-run-all clean-for-build build-commonjs-modules build-es6-modules",
-    "prepublish": "npm-run-all build test browser-build"
+    "prepublish": "npm-run-all build test browser-build",
+    "libphonenumber-metadata": "./bin/update-metadata.js metadata.min.json --countries AE,GB,CA,SA,AT,BE,CY,EE,FI,FR,DE,GR,IE,IT,LV,LT,LU,MT,NL,PT,SK,SI,ES,EZ,US,SA,SG,HK,CH,SE,IN,MY,PH,EG,ID,KW"
   },
   "betterScripts": {
     "browser-build": {
